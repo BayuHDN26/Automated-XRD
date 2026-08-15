@@ -67,3 +67,44 @@ Prepare your raw XRD data in an Excel file (`.xlsx`) with two numerical columns 
 1. Clone this repository:
    ```bash
    git clone [https://github.com/your-username/xrd-als-crystallinity-analyzer.git](https://github.com/your-username/xrd-als-crystallinity-analyzer.git)
+
+## 📊 Output Visualization Examples
+
+The algorithm generates a 2-panel visualization:
+1.  **Top Panel:** Displays the raw data, ALS background, the cumulative Multi-Gaussian fit, and color-coded filled areas separating the amorphous ($X_a$) and crystalline ($X_c$) phases.
+2.  **Bottom Panel:** Isolates the pure crystalline peaks and annotates each peak with its exact $2\theta$ position and estimated crystallite size ($D$ in nm) derived from the Scherrer equation.
+
+*(You can add an image here later by uploading a screenshot of your MATLAB plot to your repository and linking it like this: `![Output Example](path_to_image.png)`)*
+
+---
+
+## 🔬 Scientific Background
+The methodology implemented in this code addresses the subjectivity and reproducibility issues often found in manual XRD profile fitting. 
+
+The algorithm classifies peaks based on their Full Width at Half Maximum (FWHM):
+*   **Crystalline Phase:** $\text{FWHM} \le 2.5^\circ$
+*   **Amorphous Phase:** $\text{FWHM} > 2.5^\circ$
+
+Crystallinity ($X_c$) is calculated as:
+$$X_c = \left( \frac{A_c}{A_c + A_a} \right) \times 100\%$$
+
+Crystallite Size ($D$) is estimated using the Scherrer equation:
+$$D = \frac{K \lambda}{\beta \cos \theta}$$
+Where $K = 0.9$ (shape factor) and $\lambda = 0.15406$ nm (Cu-K$\alpha$ radiation).
+
+---
+
+## 📄 Citation
+If you use this algorithm or code in your research, please cite our paper:
+
+---
+
+## 👨‍💻 Authors
+*   **Junianto Sesa** (Universitas Papua)
+*   **Bayu Harnadi Nasrul** (Universitas Hasanuddin)
+*   **Andi Tessiwoja Tenri Ola** (Universitas Lambung Mangkurat)
+*   **Pryandi M. Tabaika** (Universitas Sebelas September)
+*   **Nurul Fajri Ramadhani Tang** (Universitas Papua)
+
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
