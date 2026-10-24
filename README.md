@@ -4,18 +4,18 @@
 ![Method](https://img.shields.io/badge/Algorithm-ALS%20%2B%20Scherrer-orange.svg)
 
 ## 📌 Overview
-This repository provides a MATLAB pipeline for automated X-Ray Diffraction (XRD) pattern processing. The algorithm separates the **amorphous halo** from **crystalline diffraction peaks** using **Asymmetric Weighted Least Squares (ALS)** baseline estimation, calculates the **Crystallinity Index ($CI\%$)** via numerical integration, and computes the **apparent crystallite size ($D$)** of individual diffraction peaks using the **Scherrer Equation**.
+This repository provides a MATLAB pipeline for automated X-Ray Diffraction (XRD) pattern processing. The algorithm separates the amorphous halo from crystalline diffraction peaks using Asymmetric Weighted Least Squares (ALS) baseline estimation, calculates the Crystallinity Index ($CI\%$) via numerical integration, and computes the apparent crystallite size ($D$) of individual diffraction peaks using the Scherrer Equation.
 
 ---
 
 ## ✨ Key Features
-* **Asymmetric Weighted Least Squares (ALS) Baseline Extraction:** Flexible and objective extraction of the broad amorphous background without manual baseline drawing.
-* **Light Gaussian Pre-Smoothing:** Reduces high-frequency instrument noise while preserving true peak shapes.
-* **Crystallinity Index ($CI\%$) Quantification:** Calculates phase area fractions using trapezoidal numerical integration (`trapz`).
-* **Automated Peak & FWHM Detection:** Identifies local intensity maxima and calculates Full Width at Half Maximum (FWHM) values directly from the crystalline profile.
-* **Scherrer Crystallite Size Estimation:** Computes crystallite size ($D$, in nm) for each identified peak based on Cu-$K\alpha$ radiation ($\lambda = 0.15406\text{ nm}$).
-* **Two-Panel Publication-Ready Plots:** Visualizes raw vs. baseline data and isolates crystalline peaks with custom text annotations.
-* **Automated Excel Export:** Saves comprehensive peak parameters and summary metrics across multiple sheets in an Excel workbook (`.xlsx`).
+* Asymmetric Weighted Least Squares (ALS) Baseline Extraction: Flexible and objective extraction of the broad amorphous background without manual baseline drawing.
+* Light Gaussian Pre-Smoothing: Reduces high-frequency instrument noise while preserving true peak shapes.
+* Crystallinity Index ( $CI\%$ ) Quantification: Calculates phase area fractions using trapezoidal numerical integration (`trapz`).
+* Automated Peak & FWHM Detection: Identifies local intensity maxima and calculates Full Width at Half Maximum (FWHM) values directly from the crystalline profile.
+* Scherrer Crystallite Size Estimation: Computes crystallite size  ( $D$, in nm) for each identified peak based on Cu-$K\alpha$ radiation ($\lambda = 0.15406\text{ nm}$).
+* Two-Panel Publication-Ready Plots: Visualizes raw vs. baseline data and isolates crystalline peaks with custom text annotations.
+* Automated Excel Export: Saves comprehensive peak parameters and summary metrics across multiple sheets in an Excel workbook (`.xlsx`).
 
 ---
 
