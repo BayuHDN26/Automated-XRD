@@ -5,7 +5,7 @@ close all;
 %% =========================================================================
 % 1. READ RAW DATA FROM EXCEL
 % =========================================================================
-file_excel = 'C:\Mac\Home\Documents\Baru Jurnal Moringa\TiO2.txt';
+file_excel = '..\..\File_path\TiO2.txt';
 
 try
     fprintf('Reading XRD data file: %s ...\n', file_excel);
