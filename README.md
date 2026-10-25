@@ -100,11 +100,7 @@ If you use this algorithm or code in your research, please cite our paper:
 ---
 
 ## 👨‍💻 Authors
-*   **Junianto Sesa** (Universitas Papua)
-*   **Bayu Harnadi Nasrul** (Universitas Hasanuddin)
-*   **Andi Tessiwoja Tenri Ola** (Universitas Lambung Mangkurat)
-*   **Pryandi M. Tabaika** (Universitas Sebelas Maret)
-*   **Nurul Fajri Ramadhani Tang** (Universitas Papua)
+
 
 ## 📜 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
